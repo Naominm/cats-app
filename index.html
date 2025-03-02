@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="./src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cats-app</title>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="top-content">
+        <h1>the cats app</h1>
+        <div class="input-content">
+          <div class="input-group">
+            <label for="cat-fact">number of cats facts (50 maximum)</label>
+            <div class="input-row">
+              <input type="number" id="cat-fact"  placeholder= "number of cats facts (50 max)">
+            <button>Submit</button>
+            </div>
+            
+          </div>
+          <div class="input-group">
+            <label for="cat-pic">number of cats photos (10 max)</label>
+            <div class="input-row">
+              <input type="number" id="cat-pic" placeholder="number of cats photos (10 max)">
+              <button>Submit</button>
+            </div>
+           
+           
+          </div>
+          
+        </div>
+        
+      </div>
+      <div class="bottom-container">
+        <p id="result"></p>
+      </div>
+      
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
