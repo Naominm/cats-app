@@ -74,14 +74,7 @@ async function getCatImages(){
     
     const response=await fetch(`https://api.thecatapi.com/v1/images/search?limit=${numImages}`);
     const data=await response.json();
-    let loadedImages=0;
     data.forEach((cat) => {
-      Image.onload=()=>{
-        loadedImages++;
-        if(loadedImages==numImages){
-          hideLoader();
-        }
-      }
     const img=document.createElement("img");
     img.src=cat.url ;
     img.alt="A cat";   
