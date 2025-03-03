@@ -1,9 +1,9 @@
 const catFact=document.getElementById("cat-fact");
 const catPic=document.getElementById("cat-pic");
-const catElement=document.getElementById("result");
+const catElement=document.querySelector(".fact-container");
 const buttonFact=document.getElementById("fact")
 const buttonImage=document.getElementById("image");
-const imageContainer=document.querySelector(".bottom-container")
+const imageContainer=document.querySelector(".image-container")
 const errorElement=document.querySelector("#error-box")
 const loader=document.querySelector(".loader")
 
@@ -20,6 +20,7 @@ const message=`An error occurred please try again later`
 
 
 async function getCatFacts(){
+  imageContainer.innerHTML="";
  
     showLoader();
   try {
@@ -63,6 +64,7 @@ async function getCatFacts(){
 
 async function getCatImages(){
   imageContainer.innerHTML="";
+  catElement.innerHTML="";
     showLoader();
 
    try {
