@@ -81,15 +81,25 @@ font-size: 1.2rem;
 
   @media  (max-width:58.1875rem) {
     .input-group{
-  gap:0.5rem;
+  gap:1rem;
  
+    }
+    .input-group input{
+      width: 10rem;
     }
     .input-content{
       gap: 3rem;
       padding-bottom: 3rem;
     }
   }
- 
+  @media  (max-width:21.875rem) {
+.input-group{
+  font-size: 1rem;
+}
+.top-content h1{
+  font-size: 1.5rem;
+}
+  }
  .bottom-container {
    padding-top: 3rem;
    width: 100%;
