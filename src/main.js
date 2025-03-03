@@ -21,6 +21,7 @@ const message=`An error occurred please try again later`
 
 async function getCatFacts(){
   imageContainer.innerHTML="";
+  catElement.innerHTML="";
  
     showLoader();
   try {

@@ -91,14 +91,16 @@ font-size: 1.2rem;
   }
  
  .bottom-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
    padding-top: 3rem;
    width: 100%;
  min-height:50vh;
-    background-color: #FFF7F3;
+background-color: #FFF7F3;
     
+}
+.image-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 img {
     width: 150px; 
