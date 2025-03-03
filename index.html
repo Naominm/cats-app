@@ -12,6 +12,7 @@
   </head>
   <body>
     <div class="parent">
+      <p id="error-box"></p>
       <div class="top-content">
         <h1>the cats app</h1>
         <div class="input-content">
@@ -19,7 +20,7 @@
             <label for="cat-fact">number of cats facts (50 maximum)</label>
             <div class="input-row">
               <input type="number" id="cat-fact"  placeholder= "number of cats facts (50 max)">
-            <button>Submit</button>
+            <button id="fact">Submit</button>
             </div>
             
           </div>
@@ -27,7 +28,7 @@
             <label for="cat-pic">number of cats photos (10 max)</label>
             <div class="input-row">
               <input type="number" id="cat-pic" placeholder="number of cats photos (10 max)">
-              <button>Submit</button>
+              <button id="image">Submit</button>
             </div>
            
            
@@ -36,7 +37,11 @@
         </div>
         
       </div>
+      <div class="loader" id="loader" style="display: none;">
+        <div class="spinner"></div>
+                </div>
       <div class="bottom-container">
+    
         <p id="result"></p>
       </div>
       
