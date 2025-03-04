@@ -91,6 +91,17 @@ font-size: 1.2rem;
       gap: 3rem;
       padding-bottom: 3rem;
     }
+    input::placeholder{
+      font-size: 0.5rem;
+      font-weight: 300;
+    }
+    .input-content{
+      padding-left: 1rem;
+    }
+    .fact-container{
+  padding-left: 1rem !important;
+    }
+   
   }
   @media  (max-width:21.875rem) {
 .input-group{
@@ -117,6 +128,7 @@ img {
     height: auto;
     border-radius: 2px;
 }
+
 .error-box {
   background-color: red;
   padding: 0.5rem;

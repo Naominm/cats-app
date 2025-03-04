@@ -40,13 +40,13 @@ async function getCatFacts(){
 
     let facts = Array.isArray(data.data) ? data.data : [data.data];
    const factList=document.createElement("ol");
-       factList.style.paddingLeft = "10rem"; 
+       factList.style.paddingLeft = "4rem"; 
 
        facts.forEach((fact) => {
            const listItem = document.createElement("li");
            listItem.style.lineHeight = "2.2rem";
            listItem.style.fontSize = "1.3rem";
-           listItem.textContent = fact;
+           listItem.textContent = fact
            factList.appendChild(listItem);
        });
     catElement.appendChild(factList);
