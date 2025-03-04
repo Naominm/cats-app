@@ -82,6 +82,7 @@ font-size: 1.2rem;
   @media  (max-width:58.1875rem) {
     .input-group{
   gap:1rem;
+  font-size: 1rem;
  
     }
     .input-group input{
@@ -100,6 +101,9 @@ font-size: 1.2rem;
     }
     .fact-container{
   padding-left: 1rem !important;
+    }
+    .top-content h1{
+      font-size: 1.4rem;
     }
    
   }
